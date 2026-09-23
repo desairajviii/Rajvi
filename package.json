@@ -1,0 +1,14 @@
+{
+  "name": "rajvi-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage for CS5610 Web Development, Fall 2026 — Northeastern University",
+  "type": "module",
+  "main": "index.html",
+  "author": "Rajvi Desai",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3"
+  }
+}
