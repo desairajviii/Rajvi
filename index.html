@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rajvi Desai" />
+    <meta name="description" content="Personal homepage of Rajvi Desai — MSCS student, data scientist, and basketball player." />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Rajvi Desai</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="nav-brand" href="index.html">Rajvi Desai</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="ai-generated.html">AI Page</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm Rajvi</h1>
+            <p>
+                I'm an MSCS student at Northeastern University, currently working as a
+                Software Engineer Co-op at Bracebridge Capital, where I build data
+                governance tools and automate financial reconciliation pipelines using
+                C#, .NET, and Azure DevOps. I'm also the Head TA for Machine Learning
+                &amp; Data Mining 2, and I do research applying computer vision and
+                machine learning to sports analytics - using player tracking data and
+                video to study athlete performance.
+            </p>
+            <p>
+                Before any of that, I was on the court. I represented India at the U12
+                and U14 national levels, captained Madhya Pradesh's state basketball
+                team, and trained at NBA Academy USA, where I won the Best Defender
+                award. These days, that basketball background feeds directly into my
+                research - I'm as interested in what the data says about a jump shot
+                as I am in the shot itself.
+            </p>
+        </div>
+        <img
+            src="images/headshot.JPG"
+            alt="Headshot of Rajvi Desai"
+            class="hero-photo"
+        />
+      </section>
+
+      <section class="highlights">
+        <div class="highlight-card">
+            <h2>Skills</h2>
+            <img
+            src="images/working-research.jpg"
+            alt="Rajvi working on a research project at a computer"
+            class="highlight-photo"
+            />
+            <ul class="skills-list">
+            <li>Python, R, SQL, C#, .NET</li>
+            <li>PyTorch, TensorFlow, Scikit-Learn</li>
+            <li>Computer Vision (MediaPipe, YOLO)</li>
+            <li>Time Series &amp; Bayesian Modeling</li>
+            <li>AWS, Docker, Azure DevOps, CI/CD</li>
+            <li>Tableau, Power BI, Matplotlib</li>
+            </ul>
+        </div>
+
+        <div class="highlight-card">
+            <h2>Basketball background</h2>
+            <img
+            src="images/basketball-action.PNG"
+            alt="Rajvi playing basketball during a game"
+            class="highlight-photo"
+            />
+            <ul class="basketball-list">
+            <li>Student Manager, Northeastern Women's Basketball</li>
+            <li>NBA Academy USA - Best Defender Award</li>
+            <li>Top 14 All-Star Asia Selection</li>
+            <li>India National Team - U12 &amp; U14 levels</li>
+            <li>Captain, Madhya Pradesh Women's State Team</li>
+            </ul>
+        </div>
+      </section>
+
+      <section class="shot-chart-section">
+        <h2>Try it: interactive shot chart</h2>
+        <p>
+            Click anywhere on the court below to take a shot. Shots closer to the
+            basket have a higher chance of going in, just like real shooting
+            percentages by zone.
+        </p>
+
+        <div class="shot-chart-wrapper">
+            <svg
+            id="court"
+            viewBox="0 0 500 470"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Interactive basketball half-court for taking practice shots"
+            >
+            <rect x="0" y="0" width="500" height="470" fill="#e8c39e" stroke="#333" stroke-width="2" />
+            <rect x="185" y="0" width="130" height="190" fill="none" stroke="#333" stroke-width="2" />
+            <circle cx="250" cy="190" r="60" fill="none" stroke="#333" stroke-width="2" />
+            <path d="M 30 0 L 30 140 A 220 220 0 0 0 470 140 L 470 0" fill="none" stroke="#333" stroke-width="2" />
+            <circle cx="250" cy="150" r="7.5" fill="none" stroke="#333" stroke-width="2" />
+            <rect x="235" y="140" width="30" height="4" fill="#333" />
+            </svg>
+        </div>
+
+        <div class="shot-stats" id="shotStats">
+            <span>Shots: <strong id="statShots">0</strong></span>
+            <span>Makes: <strong id="statMakes">0</strong></span>
+            <span>FG%: <strong id="statPercent">0%</strong></span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Rajvi Desai</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
