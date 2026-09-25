@@ -203,3 +203,120 @@ footer {
 .shot-stats strong {
   color: #111;
 }
+
+/* Page heading (used on projects and ai-generated pages) */
+.page-heading {
+  max-width: 1000px;
+  margin: 3rem auto 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.page-heading h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-heading p {
+  color: #666;
+}
+
+/* Project cards */
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-tags {
+  font-size: 0.9rem;
+  color: #d35400;
+  margin-bottom: 0.8rem;
+}
+
+.project-card p:not(.project-tags) {
+  color: #444;
+}
+
+/* Experience timeline */
+.experience-section {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-item {
+  border-left: 3px solid #d35400;
+  padding-left: 1.2rem;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.experience-header h3 {
+  font-size: 1.1rem;
+}
+
+.experience-date {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.experience-org {
+  font-size: 0.95rem;
+  color: #d35400;
+  margin-bottom: 0.5rem;
+}
+
+.experience-item p:not(.experience-org) {
+  color: #444;
+}
+
+/* Footer links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #d35400;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
