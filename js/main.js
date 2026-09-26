@@ -58,7 +58,10 @@ function decideIfMake(distance) {
 }
 
 function drawShotMarker(point, isMake) {
-  const marker = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  const marker = document.createElementNS(
+    "http://www.w3.org/2000/svg",
+    "circle"
+  );
   marker.setAttribute("cx", point.x);
   marker.setAttribute("cy", point.y);
   marker.setAttribute("r", 6);
